@@ -18,7 +18,8 @@ DESCRIPTION
     input readfiles. The program writes out the cleansed reads and the
     rejected reads.
 
-    -h, --help
+```
+-h, --help
           Displays this help message.
     --version
           Display version information
@@ -63,36 +64,37 @@ DESCRIPTION
     -q5, --qual-thresh5 NUM
           Quality threshold for 5-prime trimming.Set to 0 to turn off 5-prime
           trimming. In range [0..inf]. Default: 0.
+```
 
 ADAPTER DEFINITION FILE FORMAT
 ------------------------------
-    The adapter sequences are defined in an adapter definition file with the
-    extension ".txt" (dat is only allowed for Galaxy)
+The adapter sequences are defined in an adapter definition file with the
+extension ".txt" (dat is only allowed for Galaxy)
 
-    comment lines start with "#".
+comment lines start with "#".
 
-    Each non-comment(non-empty) line is tab delimited
+Each non-comment(non-empty) line is tab delimited
 
-    and has 7 fields (columns):
+and has 7 fields (columns):
 
-    1. name of the sequence
+1. name of the sequence
 
-    2. sequence (N's are allowed and match any nucleotide, useful for
-    multiplexing)
+2. sequence (N's are allowed and match any nucleotide, useful for
+multiplexing)
 
-    3. fraction of identity between adapter sequence and target sequence
-    (threshold)
+3. fraction of identity between adapter sequence and target sequence
+(threshold)
 
-    4. quality threshold
+4. quality threshold
 
-    5. minimum length of overlap between adapter and target sequence
+5. minimum length of overlap between adapter and target sequence
 
-    6. if set to >0 perform comparison with truncated adapter sequences (very
-    time consuming)
+6. if set to >0 perform comparison with truncated adapter sequences (very
+time consuming)
 
-    7. if set to 1 this is a leader sequence
+7. if set to 1 this is a leader sequence
 
 VERSION
 -------
-    clean_ngs version: 0.7
-    Last update March 2013
+clean_ngs version: 0.7
+Last update March 2013
