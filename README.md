@@ -6,6 +6,7 @@ Yet another adapter removal program for next generation sequencing
 clean_ngs - NGS Data Cleaning
 =============================
 
+
 SYNOPSIS
 --------
     clean_ngs [OPTIONS] -adf ADAPTER.txt -if1 IN.fq -of1 OUT.fq
@@ -98,3 +99,43 @@ VERSION
 -------
 clean_ngs version: 0.7
 Last update March 2013
+
+Installation
+------------
+
+
+Basic steps:
+
+- [ ] Follow the instructions on seqan.de to install the seqan package (https://github.com/seqan/seqan)
+- [ ] Follow the instructions on creating a sandbox
+- [ ] Clone samBamStats.git to apps directory
+- [ ] Update cmake configuration
+- [ ] Make
+
+
+This worked for me on a linux system:
+
+```Shell
+# clone seqan library
+git clone https://github.com/seqan/seqan.git
+# create a build directory
+mkdir seqan-trunk-build
+mkdir seqan-trunk-build/debug
+cd seqan-trunk-build/debug
+# configure a DEBUG build
+cmake ../../seqan -DCMAKE_BUILD_TYPE=Debug
+cd ../../seqan
+# create a sandbox environment
+./util/bin/skel.py repository sandbox/my_sandbox
+# get sambamstat tool
+cd sandbox/my_sandbox/apps/
+git clone https://github.com/baj12/clean_ngs.git
+cd ../../../../seqan-trunk-build/debug/
+# let cmake learn about the changes
+cmake .
+# compile sambamstat
+make clean_ngs
+# basic test
+bin/clean_ngs -h
+```
+
