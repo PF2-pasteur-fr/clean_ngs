@@ -139,3 +139,9 @@ make clean_ngs
 bin/clean_ngs -h
 ```
 
+Authors
+-------
+The initial upload was created by 
+Manuel Holtgrewe <manuel.holtgrewe@fu-berlin.de>
+and
+Bernd Jagla <bernd.jagla@pasteur.fr>
