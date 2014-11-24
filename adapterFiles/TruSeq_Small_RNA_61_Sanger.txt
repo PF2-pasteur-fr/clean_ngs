@@ -1,0 +1,11 @@
+# Please note:
+# there are 7 columns:
+# 1. name of the sequence
+# 2. seqeuence
+# 3. fraction of identity between adapter sequence and target sequence (threshold)
+# 4. quality threshold
+# 5. minimum length of overlap between adapter and target sequence
+# 6. if set to 1 perform comparisong with truncated adapter sequences (very time consuming)
+# 7. if set to 1 this is a leader sequence (otherwise it is assumed to be an adapter attached to the 3' of the sequence
+RNA3-Adapter	TGGAATTCTCGGGTGCCAAGG	0.85	61	7	0	0
+RNA_PCR_Primer_IndexN_Reversed	TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG	0.85	61	7	0	0
