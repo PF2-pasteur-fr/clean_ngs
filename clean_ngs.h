@@ -38,7 +38,7 @@
 #include <seqan/basic.h>
 #include <seqan/sequence.h>
 
-#define VERSION "0.8"
+#define VERSION "0.10"
 
 const unsigned int MAX_READ_LEN = 5000;
 
