@@ -97,8 +97,8 @@ time consuming)
 
 VERSION
 -------
-clean_ngs version: 0.7
-Last update March 2013
+clean_ngs version: 0.10
+Last update Jan 2015
 
 Installation
 ------------
