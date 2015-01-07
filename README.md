@@ -108,7 +108,7 @@ Basic steps:
 
 - [ ] Follow the instructions on seqan.de to install the seqan package (https://github.com/seqan/seqan)
 - [ ] Follow the instructions on creating a sandbox
-- [ ] Clone samBamStats.git to apps directory
+- [ ] Clone clean_ngs.git to apps directory
 - [ ] Update cmake configuration
 - [ ] Make
 
@@ -126,14 +126,15 @@ cd seqan-trunk-build/debug
 cmake ../../seqan -DCMAKE_BUILD_TYPE=Debug
 cd ../../seqan
 # create a sandbox environment
-./util/bin/skel.py repository sandbox/my_sandbox
-# get sambamstat tool
-cd sandbox/my_sandbox/apps/
-git clone https://github.com/baj12/clean_ngs.git
+# The Cmake files are adjusted for that specific sandbox configuration...
+./util/bin/skel.py repository sandbox/seqan_ngs_apps
+# get clean_ngs tool
+cd sandbox/seqan_ngs_apps/apps/
+git clone https://github.com/PF2-pasteur-fr/clean_ngs.git
 cd ../../../../seqan-trunk-build/debug/
 # let cmake learn about the changes
 cmake .
-# compile sambamstat
+# compile clean_ngs
 make clean_ngs
 # basic test
 bin/clean_ngs -h
