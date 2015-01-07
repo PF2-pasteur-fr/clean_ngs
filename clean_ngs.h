@@ -43,7 +43,9 @@
 const unsigned int MAX_READ_LEN = 5000;
 
 //Version 0.3: added Memory consumption to log
-
+ //Version 0.9 writing reads to rejected when maxLen constrain is met
+ //Version 0.10 changed output to include "min" for "removed due to min length"
+ 
 using namespace seqan;
 
 // ============================================================================
