@@ -160,7 +160,7 @@ git clone https://github.com/PF2-pasteur-fr/clean_ngs.git
 cd ~
 mkdir -p seqan-1.4.2-build/debug
 cd seqan-1.4.2-build/debug
-cmake ../../seqan-1.4.2 -DCMAKE_BUILD_TYPE=Debug
+cmake ../../seqan/seqan-1.4.2 -DCMAKE_BUILD_TYPE=Debug
 make clean_ngs
 bin/clean_ngs
 ```
