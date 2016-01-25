@@ -112,6 +112,7 @@ Basic steps:
 - [ ] Update cmake configuration
 - [ ] Make
 
+```
 ## as of the change to version 2.* this doesn't work anymore. 
 # I am in the process of moving the files to the new system
 # meanwhile please follow the instructions below
@@ -141,7 +142,9 @@ Basic steps:
 ## basic test
 #bin/clean_ngs -h
 #```
+```
 
+```
 ## for version 1.4.2 (temporary soluiton)
 # download old sources.
 mkdir ~/seqan
@@ -160,7 +163,7 @@ cd seqan-1.4.2-build/debug
 cmake ../../seqan-1.4.2 -DCMAKE_BUILD_TYPE=Debug
 make clean_ngs
 bin/clean_ngs
-
+```
 
 
 
